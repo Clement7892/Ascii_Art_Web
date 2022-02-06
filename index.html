@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art Web</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type= "png" href="assets/ASCII.png">
+</head>
+<body>
+    <div class="FormBox">
+
+        <!-- creating the form that will be filled by the user -->
+        <form action="/ascii-art" method="POST" autocomplete="off">
+
+            <h3>Welcome to our<br> ASCII-ART Web project</h3><br>
+
+            <!-- Initializing the input section that will be converted to ASCII -->
+            <textarea type="text" class="textarea" placeholder="Type Something" name="StringToAscii" title="Press Enter or write \n to print newlines
+Characters lower than 32 and higher than 126 in Ascii Table are not allowed">{{.TypeSome}}</textarea>
+
+            <!-- Choosing the Police Style wanted -->
+            <p>Banners</p>
+            <select name="PoliceStyle" id="Banner">
+                <option value="standard">   Standard</option>
+                <option value="shadow">     Shadow</option>
+                <option value="thinkertoy"> Thinkertoy</option>
+            </select><br><br>
+            
+            <!-- Choosing the color of the text and the background -->
+            <p>Colors</p>
+            <div class="BgColor">
+            <input type="color" name="Colorize" value="{{.Kolor}}" class="ColorBox"><br> <!-- Color pallete -->
+                <!-- Check Box to change the background -->
+                <input type="checkbox" class="BgColorCheck" id="ChangeBgColor" name="CheckColor" value="CheckColor"  title="Check the box to change the background color to light grey
+(Useful for colors close to the background color or dark colors)">
+                <label for="ChangeBgColor" class="BgColorCheck" style="font-size: 11px;" title="Check the box to change the background color to light grey
+(Useful for colors close to the background color or dark colors)">Change<br>Background</label>
+            </div>
+            <br>
+            
+            <!-- Choosing the text side -->
+            <p>Justify</p>
+            <input type="radio" name="Justify" value="center" checked="checked">
+                <label class="Dot">Center</label><br>
+            <input type="radio" name="Justify" value="left">
+                <label class="Dot">Left</label><br>
+            <input type="radio" name="Justify" value="right">
+                <label class="Dot">Right</label>
+            <br><br>
+
+            <!-- Submit button -->
+            <input class="submit" type="submit" value="Submit"><br><br>
+
+            <!-- Team presentation -->
+            <p class="names" title="the four protagonist that made this site">Made by Alexis, Baptiste, Elodie, Clément and Sven.</p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Style for the entire page */
+body {
+    min-height: 84vh;
+    margin: 75px;
+    background: #141E30;
+    background: -webkit-linear-gradient(to top, #18283a, #0f1827);
+    background: linear-gradient(to top, #16283b, #0b111d);
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex; 
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+/* Style for the form section */
+form {
+    margin: 50px 200px 50px 50px;
+    padding: 40px 20px;
+    border: 2px dashed white;
+    border-radius: 15px;
+    width: 200px;    
+    align-items: center;
+}
+.FormBox p {
+    margin-bottom: 0px;
+}
+
+/* Style for Color and Text sections */
+.textarea { 
+    resize:vertical;
+    width: 190px;
+}
+.BgColor{
+    display: flex;
+}
+#ChangeBgColor {
+    margin-top: 15px;
+    margin-left: 32px;
+}
+.BgColorCheck {
+    margin-top: 10px;
+}
+.ColorBox {
+    width: 50px;
+    height: 30px;
+}
+
+/* Style for Team Names Presentation */
+.names {
+    font-size: 11px;
+}
+button {
+    cursor: inherit;
+}
+
+/* Style for ResultPage */
+.Result {
+    border-radius: 15px;
+    border: solid 2px white;
+    padding: 50px;
+    margin-left: 50px;
+}
+.BottomResult {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for Interrogation marks */
+.interro {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: help;
+    text-align: justify;
+}
+#interro1 {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+#interro3 {
+    position: relative;
+    margin-left: 5px;
+}
+#interro2 {
+    position: relative;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 20px;
+    height: 18px;
+    color: white;
+}
+.interro:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+p.interro span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:none; 
+    padding:10px; 
+    margin-left:8px; 
+    width:130px;
+}
+p.interro:hover span{
+    display:inline; 
+    position:absolute; 
+    background:#ffffff;
+    color: black;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+}
